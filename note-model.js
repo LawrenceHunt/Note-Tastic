@@ -1,14 +1,13 @@
 (function(exports) {
 
-  function Note() {
+  function Note(text) {
 
-    this.title = "";
-    this.text = "";
+    this.text = text;
 
 
   }
 
-    Note.prototype.setText = function(text){
+    Note.prototype.updateText = function(text){
       this.text = text;
     };
 

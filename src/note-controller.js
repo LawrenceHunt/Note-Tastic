@@ -8,5 +8,4 @@
   };
 
   exports.NoteController = NoteController;
-  exports.showList = this.showList;
 })(this);

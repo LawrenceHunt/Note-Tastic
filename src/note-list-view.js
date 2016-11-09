@@ -10,9 +10,8 @@
     }
     htmlString += "</ul>";
     return htmlString;
-  }
+  };
 
   exports.NoteView = NoteView;
-  exports.html = this.html;
 
 })(this);

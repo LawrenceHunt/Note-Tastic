@@ -6,7 +6,7 @@
   NoteView.prototype.html = function() {
     var htmlString = "<ul>";
     for (var i = 0; i < this.notes.length; i++) {
-      htmlString += "<li><div>" + this.notes[i].returnText() + "</div></li>";
+      htmlString += "<li><div>" + this.notes[i].returnSnippet() + "</div></li>";
     }
     htmlString += "</ul>";
     return htmlString;

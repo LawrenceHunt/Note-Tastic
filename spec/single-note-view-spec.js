@@ -10,13 +10,4 @@ function testSingleNoteView() {
   }
 }
 
-function testSnippet(){
-  if(document.getElementById('noteSnippet').textContent !== "Hertfordshire rocks!") {
-    console.log("Failed: snippet view");
-  } else {
-    console.log('Passed: snippet view');
-  }
-}
-
 testSingleNoteView();
-testSnippet();

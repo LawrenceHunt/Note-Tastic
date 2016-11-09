@@ -1,0 +1,24 @@
+{
+  "name": "notetastic",
+  "version": "1.0.0",
+  "description": "A simple note taker tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LawrenceHunt/Note-Tastic.git"
+  },
+  "author": "Lawrence Hunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LawrenceHunt/Note-Tastic/issues"
+  },
+  "homepage": "https://github.com/LawrenceHunt/Note-Tastic#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "content-disposition": "^0.5.1",
+    "express": "^4.14.0"
+  }
+}

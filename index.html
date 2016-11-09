@@ -1,6 +1,25 @@
-<html>
-  <head>
-    <script src="./bundle.js"></script>
-  </head>
-  <body></body>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Note-Tastic!</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <textarea id="noteText" cols="70" rows="20"></textarea>
+  <input id="createNote" value="Create note!"></input>
+
+  <script src="./note-list-model.js"></script>
+  <script src="./note-model.js"></script>
+  <script src="./note-list-view.js"></script>
+  <script src="./note-controller.js"></script>
+  <script src="./index.js"></script>
+  <!-- <script src="./spec/note-spec.js"></script> -->
+
+</body>
+
 </html>

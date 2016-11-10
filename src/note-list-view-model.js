@@ -17,6 +17,4 @@
     }
 
     exports.NoteListView = NoteListView;
-    exports.displayNotes = this.displayNotes;
-
 })(this);

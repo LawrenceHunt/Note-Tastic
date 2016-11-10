@@ -9,5 +9,4 @@
   };
 
   exports.SingleNote = SingleNote;
-  exports.returnHTML = this.returnHTML;
 })(this);

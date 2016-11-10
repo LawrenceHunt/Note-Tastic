@@ -14,5 +14,4 @@
     };
 
     exports.NoteList = NoteList;
-    exports.saveNote = this.saveNote;
 })(this);

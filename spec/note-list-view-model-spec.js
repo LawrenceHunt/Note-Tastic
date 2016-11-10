@@ -17,3 +17,17 @@ function testDisplayNotes() {
 }
 
 testDisplayNotes();
+
+function testDisplayOfURL() {
+  var notelist = new NoteList();
+  noteList.saveNote("Test Note");
+  noteList.saveNOte("Test 2");
+  var noteListView = new NoteListView(notelist);
+  var actual = noteListView.displayNotes();
+  var expected ="<ul><li><div><a href='#notes/1'>Test Note</div></li><li><div><a href='#notes/2'>Test 2</div></li></ul>";
+
+  assert.isTrue(expected === actual);
+
+}
+
+testDisplayOfURL();

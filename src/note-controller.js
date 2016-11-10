@@ -10,5 +10,4 @@
   };
 
   exports.NoteController = NoteController;
-  exports.insertNotes = this.insertNotes;
 })(this);

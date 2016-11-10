@@ -7,7 +7,7 @@
     NoteListView.prototype.displayNotes = function () {
       var notes = this.noteList.showNotes();
       var list = notes.map(function(note) {
-          return "<li><div>" + chopText(note.getText()) + "</div></li>";
+          return "<li><div><a href=\"#notes/"+ note.id +"\">" + chopText(note.getText()) + "</a></div></li>";
       }).join("");
       return '<ul>' + list + '</ul>';
     };

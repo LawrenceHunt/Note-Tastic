@@ -22,3 +22,21 @@ function testInsertNotes() {
 }
 
 testInsertNotes();
+
+function testDisplaySingleNote(){
+  noteList = new NoteList();
+  noteList.saveNote('Hi, single note');
+  var note = noteList.showNotes()[0];
+  note.id = 20;
+  var controller = new NoteController(noteList);
+  var element = document.createElement('div', {id: 'app'});
+  controller.insertNotes();
+
+  window.location.hash = '#notes/20';
+
+  var inApp = document.getElementById('app');
+
+  actual = inApp.innerHTML;
+  expected = '<div>Hi, single note</div>';
+
+}

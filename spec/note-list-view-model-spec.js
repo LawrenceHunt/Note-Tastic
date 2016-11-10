@@ -13,19 +13,18 @@ function testDisplayNotes() {
     var noteList = new NoteList();
     noteList.saveNote(text);
     var noteListView = new NoteListView(noteList);
-    assert.isTrue(noteListView.displayNotes() === "<ul><li><div>Lorem ipsum dolor si...</div></li></ul>");
+    assert.isTrue(noteListView.displayNotes() === "<ul><li><div><a href=\"#notes/6\">Lorem ipsum dolor si...</a></div></li></ul>");
 }
 
 testDisplayNotes();
 
 function testDisplayOfURL() {
-  var notelist = new NoteList();
+  var noteList = new NoteList();
   noteList.saveNote("Test Note");
-  noteList.saveNOte("Test 2");
-  var noteListView = new NoteListView(notelist);
+  noteList.saveNote("Test 2");
+  var noteListView = new NoteListView(noteList);
   var actual = noteListView.displayNotes();
-  var expected ="<ul><li><div><a href='#notes/1'>Test Note</div></li><li><div><a href='#notes/2'>Test 2</div></li></ul>";
-
+  var expected ="<ul><li><div><a href=\"#notes/7\">Test Note</a></div></li><li><div><a href=\"#notes/8\">Test 2</a></div></li></ul>";
   assert.isTrue(expected === actual);
 
 }

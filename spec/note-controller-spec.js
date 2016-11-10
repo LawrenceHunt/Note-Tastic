@@ -39,4 +39,7 @@ function testDisplaySingleNote(){
   actual = inApp.innerHTML;
   expected = '<div>Hi, single note</div>';
 
+  assert.isTrue(actual === expected);
 }
+
+testDisplayNotes();

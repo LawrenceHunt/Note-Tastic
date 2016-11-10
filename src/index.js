@@ -8,3 +8,4 @@ noteList.saveNote("Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
 var controller = new NoteController(noteList);
 
 controller.insertNotes();
+makeUrlChangeNoteForCurrentPage();

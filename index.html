@@ -5,14 +5,20 @@
     <title>Note List App</title>
   </head>
   <body>
-    <div id="app">
-      Hello
-    </div>
+  <form id="createNote" action="/#createNote" method="post">
+    <textarea id="noteText" placeholder = "write your note here" rows = "5" cols = "50"></textarea></br>
+    <input id = "noteSubmit" type="submit" value="create your note!">
+  </form>
+
+    <div id="singleView"></div>
+    <div id="app"></div>
+
     <script src="src/note-controller.js"></script>
     <script src="src/note-model.js"></script>
     <script src="src/note-list-model.js"></script>
     <script src="src/note-list-view-model.js"></script>
     <script src="src/hash-change-controller.js"></script>
+    <script src="src/create-note-controller.js"></script>
     <script src="src/single-note-view.js"></script>
     <script src="src/index.js"></script>
 

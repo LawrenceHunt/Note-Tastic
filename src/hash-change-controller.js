@@ -13,10 +13,10 @@
   }
 
   function showNote(id) {
-    var note = this.noteList.locateNote(id);
+    var note = this.noteList.locateNote(parseInt(id));
     var singleNote = new SingleNote(note);
     document
-      .getElementById("app")
+      .getElementById("singleView")
       .innerHTML = singleNote.returnHTML();
   }
 

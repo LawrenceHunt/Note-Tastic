@@ -9,3 +9,4 @@ var controller = new NoteController(noteList);
 
 controller.insertNotes();
 makeUrlChangeNoteForCurrentPage();
+listenForCreateNote();
